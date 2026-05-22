@@ -59,13 +59,12 @@
             position: absolute;
             z-index: -1;
             object-fit: cover;
-            opacity: 0.15;
-            border-radius: 40px;
-            filter: grayscale(100%);
+            opacity: 0.9;
+
         }
-        .bg-photo-1 { top: 2%; left: -20px; width: 300px; height: 350px; transform: rotate(-10deg); }
-        .bg-photo-2 { top: 35%; right: -50px; width: 350px; height: 400px; transform: rotate(15deg); }
-        .bg-photo-3 { bottom: 5%; left: -30px; width: 320px; height: 320px; transform: rotate(-5deg); }
+        .bg-photo-1 { top: 2%; left: 0px; width: 100%; height: auto; }
+        .bg-photo-2 { top: 35%; right: 0px; width: 100%; height: auto;  }
+        .bg-photo-3 { bottom: 5%; left: 0px; width: 100%; height: auto;  }
         section {
             background: var(--glass-bg);
             backdrop-filter: blur(24px);
@@ -76,7 +75,7 @@
             margin-bottom: 24px;
             box-shadow: var(--glass-shadow);
         }
-        .img-hero, .img-section, .img-menu-screen {
+          .img-menu-screen {
             width: 100%;
             object-fit: cover;
             border-radius: var(--radius-md);
@@ -84,8 +83,9 @@
             border: 2px solid var(--glass-border);
             display: block;
         }
-        .img-hero { height: 240px; margin: 16px 0 24px 0; }
-        .img-section { height: 180px; margin: 20px 0; }
+        .img-hero { width: 100%; height: auto; margin: -16px 0 24px 0; }
+        .img-section { width: 100%; height: auto; margin: -16px 0 0 0; }
+        .img-section-plan { width: 100%; height: auto; margin:0; }
         .img-menu-screen { margin-bottom: 16px; }
         .img-pdf {
             width: 100%;
@@ -351,15 +351,29 @@
             gap: 16px;
             margin-bottom: 24px;
         }
+
+
+
+        .block-top {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), var(--beige-light));
+            border: 1px solid var(--inner-border);
+            border-radius: var(--radius-sm);
+            padding: 10px;
+            box-shadow: var(--inner-shadow);
+            margin-top: -70px;
+
+            position: relative;
+             z-index: 1;
+        }
     </style>
 </head>
 <body>
 
 <main class="mobile-app">
 
-    <img src="https://placehold.co/400x400/E5E7EB/9CA3AF?text=Фон+1" class="bg-photo bg-photo-1" alt="">
-    <img src="https://placehold.co/400x400/E5E7EB/9CA3AF?text=Фон+2" class="bg-photo bg-photo-2" alt="">
-    <img src="https://placehold.co/400x400/E5E7EB/9CA3AF?text=Фон+3" class="bg-photo bg-photo-3" alt="">
+    <img src="/assets/img/bg1.webp" class="bg-photo bg-photo-1" alt="">
+    <img src="/assets/img/bg1.webp" class="bg-photo bg-photo-2" alt="">
+    <img src="/assets/img/bg1.webp" class="bg-photo bg-photo-3" alt="">
 
     <section class="text-center">
         <h1 class="h-main">
@@ -371,9 +385,11 @@
             <span class="text-accent-green">90 простих літніх рецептів</span> із розрахунком калорій та БЖВ 🍓🥒
         </p>
 
-        <img src="https://placehold.co/800x560/E5E7EB/6B7280?text=Головне+Фото" alt="Головне фото" class="img-hero">
-        
-        <p style="margin-top: 24px;">Більше не потрібно щодня думати:</p>
+        <img src="/assets/img/1.webp" alt="Головне фото" class="img-hero">
+        <div class="block-top">
+             <p >Більше не потрібно щодня думати:</p>
+       
+        </div>
         <p class="quote-box">«Що сьогодні приготувати?» 🤔</p>
         
         <p>
@@ -386,14 +402,14 @@
         
         <p class="fw-bold">Швидко • Смачно • Звично • Без складних продуктів</p>
         
-        <a href="https://secure.wayforpay.com/page?vkh=6a1084fe-cd14-4608-a6d3-1ac622d1dba8&fbclid=PAVERFWAR9ZGNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadiqFlFMnZWVz1EvRIO3CiGqbDOVFdQqv6oBCFEaL_RFu7fY71-z-HX1ugtcA_aem_OYpVwPrm3qz8oYEGZjPcFQ"
+        <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
          class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
     </section>
 
     <section>
         <h2 class="h2-title">Щодня одна й та сама історія...</h2>
         
-        <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Проблема" alt="Проблема" class="img-section">
+        <img src="/assets/img/проблема.webp" alt="Проблема" class="img-section">
 
         <p class="fw-bold text-accent-brown">Відкриваєш холодильник і знову думаєш:</p>
         
@@ -411,7 +427,7 @@
     <section>
         <h2 class="h2-title text-center">Готове рішення вже є 💚</h2>
         
-        <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Рішення" alt="Рішення" class="img-section">
+        <img src="/assets/img/рішення.webp" alt="Рішення" class="img-section">
 
         <p class="text-center">Я зібрала меню на 30 днів, щоб питання харчування <span class="text-accent-brown">більше не забирало ваш час</span>.</p>
         
@@ -439,16 +455,16 @@
         </div>
         
         <div class="simple-list" style="margin-top: 24px; text-align: center;">
-            <p class="fw-bold">❌ Без дієт.</p>
-            <p class="fw-bold">❌ Без заборон.</p>
-            <p class="fw-bold">❌ Без дорогих інгредієнтів.</p>
-            <p class="fw-bold">❌ Без щоденного стресу.</p>
+            <p class="fw-bold">✅ Без дієт.</p>
+            <p class="fw-bold">✅ Без заборон.</p>
+            <p class="fw-bold">✅ Без дорогих інгредієнтів.</p>
+            <p class="fw-bold">✅ Без щоденного стресу.</p>
         </div>
     </section>
 
     <section class="text-center">
         <h2 class="h2-title">Готовий план харчування на цілий місяць ✨</h2>
-         <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=План" alt="План" class="img-section">
+         <img src="/assets/img/план.webp" alt="План" class="img-section-plan">
         <div class="price-wrap">
             <span class="price-old">1200 грн</span>
             <span class="price-new">349 грн</span>
@@ -458,7 +474,7 @@
             <span class="text-accent-green">🎁 + 20 рецептів десертів</span> без цукру у подарунок
         </div>
         
-        <a href="https://secure.wayforpay.com/page?vkh=6a1084fe-cd14-4608-a6d3-1ac622d1dba8&fbclid=PAVERFWAR9ZGNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadiqFlFMnZWVz1EvRIO3CiGqbDOVFdQqv6oBCFEaL_RFu7fY71-z-HX1ugtcA_aem_OYpVwPrm3qz8oYEGZjPcFQ"
+       <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
          class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
     </section>
 
@@ -467,23 +483,23 @@
         
         <div class="pdf-slider" style="margin-top: 24px;">
             <div class="pdf-card">
-                <img src="https://placehold.co/600x800/E5E7EB/6B7280?text=Сніданки" class="img-pdf" alt="сніданки">
+                <img src="/assets/img/сніданки.webp" class="img-pdf" alt="сніданки">
                 <div class="pdf-title-overlay">сніданки</div>
             </div>
             <div class="pdf-card">
-                <img src="https://placehold.co/600x800/E5E7EB/6B7280?text=Обіди" class="img-pdf" alt="обіди">
+                <img src="/assets/img/обіди.webp" class="img-pdf" alt="обіди">
                 <div class="pdf-title-overlay">обіди</div>
             </div>
             <div class="pdf-card">
-                <img src="https://placehold.co/600x800/E5E7EB/6B7280?text=Вечері" class="img-pdf" alt="вечері">
+                <img src="/assets/img/вечері.webp" class="img-pdf" alt="вечері">
                 <div class="pdf-title-overlay">вечері</div>
             </div>
             <div class="pdf-card">
-                <img src="https://placehold.co/600x800/E5E7EB/6B7280?text=Перекуси" class="img-pdf" alt="перекуси">
+                <img src="/assets/img/перекуси.webp" class="img-pdf" alt="перекуси">
                 <div class="pdf-title-overlay">перекуси</div>
             </div>
             <div class="pdf-card">
-                <img src="https://placehold.co/600x800/E5E7EB/6B7280?text=Десерти" class="img-pdf" alt="десерти">
+                <img src="/assets/img/десерти.webp" class="img-pdf" alt="десерти">
                 <div class="pdf-title-overlay">десерти</div>
             </div>
         </div>
@@ -506,7 +522,7 @@
             <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Відгук+3" class="img-menu-screen" alt="Відгук 3" style="margin: 0;">
         </div>
         
-        <a href="https://secure.wayforpay.com/page?vkh=6a1084fe-cd14-4608-a6d3-1ac622d1dba8&fbclid=PAVERFWAR9ZGNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadiqFlFMnZWVz1EvRIO3CiGqbDOVFdQqv6oBCFEaL_RFu7fY71-z-HX1ugtcA_aem_OYpVwPrm3qz8oYEGZjPcFQ"
+       <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
          class="btn" style="margin-top: 24px;">🟢 ХОЧУ МЕНЮ</a>
     </section>
 
@@ -544,7 +560,7 @@
             <span class="price-new">350 грн</span>
         </div>
         
-        <a href="https://secure.wayforpay.com/page?vkh=6a1084fe-cd14-4608-a6d3-1ac622d1dba8&fbclid=PAVERFWAR9ZGNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadiqFlFMnZWVz1EvRIO3CiGqbDOVFdQqv6oBCFEaL_RFu7fY71-z-HX1ugtcA_aem_OYpVwPrm3qz8oYEGZjPcFQ"
+        <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
          class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
     </section>
 
