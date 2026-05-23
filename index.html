@@ -166,7 +166,7 @@
             list-style: none;
             margin: 24px 0;
             background: var(--inner-bg);
-            border: 1px solid var(--inner-border);
+            border: 3px solid var(--inner-border);
             border-radius: var(--radius-sm);
             padding: 24px;
             box-shadow: var(--inner-shadow);
@@ -365,6 +365,123 @@
             position: relative;
              z-index: 1;
         }
+
+
+
+  .questions-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px; 
+        margin: 24px -12px; 
+    }
+    .question-card {
+        border-radius: var(--radius-sm);
+        padding: 10px 8px; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: var(--inner-shadow);
+        border: 1px solid var(--glass-border);
+        height: 100%; 
+    }
+   
+    .bg-card-1 { background: linear-gradient(180deg, #FFFBEB 0%, #fff9e1 100%); }
+    .bg-card-2 { background: linear-gradient(180deg, #F0FDF4 0%, #ecfff3 100%); }
+    .bg-card-3 { background: linear-gradient(180deg, #F5F3FF 0%, #e9eeff 100%); }
+    
+    .qc-img {
+        width: 100%;
+        aspect-ratio: 1; 
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0,0,0,0.05);
+        flex-shrink: 0; 
+    }
+    .qc-text {
+        font-size: 14px; 
+        font-weight: 600;
+        text-align: left;
+        color: var(--text-black);
+        line-height: 1.25;
+        margin: 0;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        flex: 1; 
+    }
+
+    .problems-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .problem-row {
+        display: flex;
+        align-items: center;
+        background: var(--inner-bg);
+        border: 2px solid var(--inner-border);
+        border-radius: var(--radius-sm);
+        padding: 16px;
+        box-shadow: var(--inner-shadow);
+    }
+    .problem-icon {
+        background: #EF4444; 
+        color: #FFFFFF;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        flex-shrink: 0;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(239, 68, 68, 0.4);
+    }
+    .problem-text {
+        flex: 1;
+        margin: 0 16px;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--text-black);
+        line-height: 1.4;
+    }
+    .problem-emoji {
+        font-size: 28px;
+        flex-shrink: 0;
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    }
+
+    .solution-hint {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+        gap: 12px;
+    }
+    .hint-arrow {
+        color: #718153; 
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 1;
+    }
+    .hint-title {
+        color: #718153;
+        font-size: 20px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: none;
+    }
+    .hint-leaf {
+        font-size: 18px;
+        opacity: 0.8;
+       
+        filter: sepia(0.3) hue-rotate(-30deg);
+    }
     </style>
 </head>
 <body>
@@ -406,10 +523,10 @@
          class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
     </section>
 
-    <section>
+    <!-- <section>
         <h2 class="h2-title">Щодня одна й та сама історія...</h2>
         
-        <img src="assets/img/проблема.webp" alt="Проблема" class="img-section">
+        <img src="/assets/img/проблема.webp" alt="Проблема" class="img-section">
 
         <p class="fw-bold text-accent-brown">Відкриваєш холодильник і знову думаєш:</p>
         
@@ -422,7 +539,54 @@
         <p class="fw-bold">Немає ідей.</p>
         <p class="fw-bold">Немає часу шукати рецепти.</p>
         <p class="fw-bold">Немає бажання щодня вигадувати меню заново.</p>
-    </section>
+    </section> -->
+
+    <section>
+    <h2 class="h2-title">Щодня одна й та сама історія...</h2>
+     <img src="assets/img/проблема.webp" alt="Проблема" class="img-section">
+    <h3 class="fw-bold text-accent-brown">Відкриваєш холодильник і знову думаєш:</h3>
+    
+    <div class="questions-grid">
+        <div class="question-card bg-card-1">
+            <img src="https://placehold.co/120x120/E5E7EB/6B7280?text=Сніданок" class="qc-img" alt="Сніданок">
+            <p class="qc-text">— Що приготувати на сніданок?</p>
+        </div>
+        <div class="question-card bg-card-2">
+            <img src="https://placehold.co/120x120/E5E7EB/6B7280?text=Обід" class="qc-img" alt="Обід">
+            <p class="qc-text">— Що взяти на обід?</p>
+        </div>
+        <div class="question-card bg-card-3">
+            <img src="https://placehold.co/120x120/E5E7EB/6B7280?text=Вечеря" class="qc-img" alt="Вечеря">
+            <p class="qc-text">— Що зробити на вечерю?</p>
+        </div>
+    </div>
+    
+    <div class="problems-list">
+        <div class="problem-row">
+            <span class="problem-icon">✕</span>
+            <p class="problem-text">Немає ідей.</p>
+            <span class="problem-emoji">💡</span>
+        </div>
+        <div class="problem-row">
+            <span class="problem-icon">✕</span>
+            <p class="problem-text">Немає часу шукати рецепти.</p>
+            <span class="problem-emoji">⏳</span>
+        </div>
+        <div class="problem-row">
+            <span class="problem-icon">✕</span>
+            <p class="problem-text">Немає бажання щодня вигадувати меню заново.</p>
+            <span class="problem-emoji">😔</span>
+        </div>
+    </div>
+    <div class="solution-hint">
+            <div class="hint-arrow">↓</div>
+            <div class="hint-title">
+                <span class="hint-leaf">🍃</span> 
+                А рішення вже готове 
+                <span class="hint-leaf">🍃</span>
+            </div>
+        </div>
+</section>
 
     <section>
         <h2 class="h2-title text-center">Готове рішення вже є 💚</h2>
