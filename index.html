@@ -84,7 +84,7 @@
             display: block;
         }
         .img-hero { width: 100%; height: auto; margin: -16px 0 24px 0; }
-        .img-section { width: 100%; height: auto; margin: -16px 0 0 0; border-radius: var(--radius-md);}
+        .img-section { width: 100%; height: auto; margin: -16px 0 0 0; border-radius: var(--radius-md); }
         .img-section-plan { width: 100%; height: auto; margin:0; }
         .img-menu-screen { margin-bottom: 16px; }
         .img-pdf {
@@ -734,6 +734,32 @@
     }
 
 
+
+    .gallery-hint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: var(--text-light-gray);
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 16px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .gallery-hint svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--text-light-gray);
+        /* animation: pulse-right 1.5s infinite; */
+    }
+
+    /* @keyframes pulse-right {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(5px); }
+    } */
+
     </style>
 </head>
 <body>
@@ -848,7 +874,7 @@
 
     <section>
         <h2 class="h2-title text-center">Готове рішення вже є 💚</h2>
-        
+         <h3>Готовий план харчування на цілий місяць ✨</h3>
         <img src="assets/img/рішення.webp" alt="Рішення" class="img-section">
 
         <p class="text-center">Я зібрала меню на 30 днів, щоб питання харчування <span class="text-accent-brown">більше не забирало ваш час</span>.</p>
@@ -956,9 +982,15 @@
             <p class="fw-bold">✅ Без дорогих інгредієнтів.</p>
             <p class="fw-bold">✅ Без щоденного стресу.</p>
         </div>
+          <div class="bonus-pill">
+            <span class="text-accent-green">🎁 + 20 рецептів десертів</span> без цукру у подарунок
+        </div>
+        
+       <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
+         class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
     </section>
 
-    <section class="text-center">
+    <!-- <section class="text-center">
         <h2 class="h2-title">Готовий план харчування на цілий місяць ✨</h2>
          <img src="assets/img/план.webp" alt="План" class="img-section-plan">
         <div class="price-wrap">
@@ -972,7 +1004,7 @@
         
        <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
          class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
-    </section>
+    </section> -->
 
     <section>
         <h2 class="h2-title text-center">Подивіться, що ви отримаєте</h2>
@@ -999,12 +1031,16 @@
                 <div class="pdf-title-overlay">десерти</div>
             </div>
         </div>
+        <div class="gallery-hint">
+            Гортай галерею
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </div>
 
-        <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 24px;">
+        <!-- <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 24px;">
             <img src="https://placehold.co/800x1200/E5E7EB/6B7280?text=Скрін+Меню+1" class="img-menu-screen" alt="Скрін меню 1">
             <img src="https://placehold.co/800x1200/E5E7EB/6B7280?text=Скрін+Меню+2" class="img-menu-screen" alt="Скрін меню 2">
             <img src="https://placehold.co/800x1200/E5E7EB/6B7280?text=Скрін+Меню+3" class="img-menu-screen" alt="Скрін меню 3">
-        </div>
+        </div> -->
     </section>
 
 <section>
