@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЛІТНЄ МЕНЮ НА 30 ДНІВ</title>
-
+    <!-- <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script> -->
 <!-- ТУТ МОЖНА ВКАЗАТИ МЕТА ТЕГИ ТА РЕШТУ ДЛЯ SEO -->
 
     
@@ -751,6 +751,94 @@
     }
 
 
+
+.dynamic-icon {
+    font-size: 1.1em; 
+    width: 1.1em;
+    height: 1.1em;
+    
+    margin: 5px;
+    vertical-align: middle; 
+    display: inline-flex;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.04));
+}
+.icon-1 { background-image: url("assets/icons/pdfменю.svg"); }
+.icon-2 { background-image: url("assets/icons/ідея.svg"); }
+.icon-4 { background-image: url("assets/icons/бутер.svg"); }
+.icon-5 { background-image: url("assets/icons/вафля.svg"); }
+.icon-6 { background-image: url("assets/icons/дируни.svg"); }
+.icon-7 { background-image: url("assets/icons/думка.svg"); }
+.icon-9 { background-image: url("assets/icons/квітка.svg"); }
+.icon-10 { background-image: url("assets/icons/книга рецептів.svg"); }
+.icon-11 { background-image: url("assets/icons/книга ще.svg"); }
+.icon-12 { background-image: url("assets/icons/кнопка.svg"); }
+.icon-13 { background-image: url("assets/icons/корисно.svg"); }
+.icon-14 { background-image: url("assets/icons/місце їжі.svg"); }
+.icon-15 { background-image: url("assets/icons/меню1.svg"); }
+.icon-16 { background-image: url("assets/icons/пательня.svg"); }
+.icon-18 { background-image: url("assets/icons/перекуси.svg"); }
+.icon-19 { background-image: url("assets/icons/перший еран лого.svg"); }
+.icon-21 { background-image: url("assets/icons/подарунок.svg"); }
+.icon-22 { background-image: url("assets/icons/рішення є.svg"); }
+.icon-24 { background-image: url("assets/icons/рецепти.svg"); }
+.icon-25 { background-image: url("assets/icons/смачний .svg"); }
+.icon-26 { background-image: url("assets/icons/суп.svg"); }
+.icon-29 { background-image: url("assets/icons/час готувати.svg"); }
+.icon-30 { background-image: url("assets/icons/час.svg"); }
+.icon-31 { background-image: url("assets/icons/яйце.svg"); }
+.icon-32 { background-image: url("assets/icons/готувати.svg"); }
+.icon-33 { background-image: url("assets/icons/їсти.svg"); }
+.icon-34 { background-image: url("assets/icons/серце.svg"); }
+.icon-35 { background-image: url("assets/icons/фото.svg"); }
+.icon-36 { background-image: url("assets/icons/ваги.svg"); }
+.icon-37 { background-image: url("assets/icons/десерти.svg"); }
+.icon-38 { background-image: url("assets/icons/галочка.svg"); }
+.icon-39 { background-image: url("assets/icons/різноманітно.svg"); }
+.icon-40 { background-image: url("assets/icons/зручно.svg"); }
+.icon-41 { background-image: url("assets/icons/telegram.svg"); }
+
+
+
+
+
+.reviews-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 12px 4px 24px 4px;
+    margin: 0 -8px;
+    scrollbar-width: none;
+}
+.reviews-slider::-webkit-scrollbar { 
+    display: none; 
+}
+.review-slider-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    background: #FFFFFF;
+    border: 2px solid var(--inner-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--inner-shadow);
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review-slider-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: calc(var(--radius-md) - 4px);
+    display: block;
+}
     </style>
 </head>
 <body>
@@ -764,11 +852,13 @@
     <section class="text-center">
         <h1 class="h-main">
             <span class="text-accent-green">ЛІТНЄ МЕНЮ</span><br>
-            <span class="text-accent-brown">НА 30 ДНІВ</span> ☀️
+            <span class="text-accent-brown">НА 30 ДНІВ</span> 
+             <span class="dynamic-icon icon-19"></span>
         </h1>
         
         <p class="fw-bold">
-            <span class="text-accent-green">90 простих літніх рецептів</span> із розрахунком калорій та БЖВ 🍓🥒
+            <span class="text-accent-green">90 простих літніх рецептів</span> із розрахунком калорій та БЖВ 
+             <span class="dynamic-icon icon-11"></span>
         </p>
 
         <img rel="preload" fetchpriority="high" as="image" src="assets/img/1.webp" alt="Головне фото" class="img-hero" style="aspect-ratio: 1024 / 870;">
@@ -776,14 +866,19 @@
              <p >Більше не потрібно щодня думати:</p>
        
         </div>
-        <p class="quote-box">«Що сьогодні приготувати?» 🤔</p>
+        <p class="quote-box">«Що сьогодні приготувати?» 
+            
+
+        </p>
         
         <p>
-            <span class="text-accent-brown">90 готових рецептів</span> із розрахунком калорій та БЖВ 🍽️
+            <span class="text-accent-brown">90 готових рецептів</span> із розрахунком калорій та БЖВ 
+           
         </p>
         
         <div class="bonus-pill">
-            🎁 БОНУС: 20 десертів без цукру
+              <span class="dynamic-icon icon-21"></span>
+             БОНУС: 20 десертів без цукру
         </div>
         
         <p class="fw-bold">Швидко • Смачно • Звично • Без складних продуктів</p>
@@ -791,7 +886,10 @@
 <!--..................................................................................................................................-->
 <!--ТУТ РЕКОМЕНДУЮ ТАКОЖ ПОСИЛАННЯ ДЛЯ КНОПКИ БАХНУТЬ.................................................................................-->    
         <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
-         class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
+         class="btn">
+          <span class="dynamic-icon icon-12"></span>
+         
+         ОТРИМАТИ МЕНЮ</a>
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
@@ -802,7 +900,9 @@
     <section>
     <h2 class="h2-title">Щодня одна й та сама історія...</h2>
      <img src="assets/img/проблема.webp" alt="Проблема" class="img-section" style="aspect-ratio: 1280 / 853;">
-    <p class="fw-bold text-accent-brown">Відкриваєш холодильник і знову думаєш: 💭</p>
+    <p class="fw-bold text-accent-brown">Відкриваєш холодильник і знову думаєш: 
+         <span class="dynamic-icon icon-7"></span>
+    </p>
     
 
        <ul class="simple-list">
@@ -815,25 +915,38 @@
         <div class="problem-row">
             <span class="problem-icon">✕</span>
             <p class="problem-text">Немає ідей.</p>
-            <span class="problem-emoji">💡</span>
+            <span class="problem-emoji">
+             
+
+                
+            </span>
         </div>
         <div class="problem-row">
             <span class="problem-icon">✕</span>
             <p class="problem-text">Немає часу шукати рецепти.</p>
-            <span class="problem-emoji">⏳</span>
+            <span class="problem-emoji">
+    
+            </span>
         </div>
         <div class="problem-row">
             <span class="problem-icon">✕</span>
             <p class="problem-text">Немає бажання щодня вигадувати меню заново.</p>
-            <span class="problem-emoji">😔</span>
+        
         </div>
     </div>
 
 </section>
 
     <section>
-        <h2 class="h2-title text-center">Готове рішення вже є 💚</h2>
-         <h3>Готовий план харчування на цілий місяць ✨</h3>
+        <h2 class="h2-title text-center">
+             
+            Готове рішення вже є
+            <span class="dynamic-icon icon-22"></span>
+        </h2>
+         <h3>Готовий план харчування на цілий місяць 
+           
+
+         </h3>
         <img src="assets/img/рішення.webp" alt="Рішення" class="img-section" style="aspect-ratio: 1280 / 1024;">
 
         <p class="text-center">Я зібрала меню на 30 днів, щоб питання харчування <span class="text-accent-brown">більше не забирало ваш час</span>.</p>
@@ -843,25 +956,29 @@
        <div class="steps-wrapper">
             <div class="step">
                 <div class="step-icon step-color-1">
-                    <div class="step-icon-inner">📖</div>
+                    <div class="step-icon-inner">
+                         <p class="dynamic-icon icon-10"></p>
+
+
+                    </div>
                 </div>
                 відкрили меню
             </div>
             <div class="step">
                 <div class="step-icon step-color-2">
-                    <div class="step-icon-inner">🍽️</div>
+                    <div class="step-icon-inner">   <p class="dynamic-icon icon-31"></p></div>
                 </div>
                 обрали страву
             </div>
             <div class="step">
                 <div class="step-icon step-color-3">
-                    <div class="step-icon-inner">👩‍🍳</div>
+                    <div class="step-icon-inner">   <p class="dynamic-icon icon-32"></p></div>
                 </div>
                 приготували
             </div>
             <div class="step">
                 <div class="step-icon step-color-4">
-                    <div class="step-icon-inner">😋</div>
+                    <div class="step-icon-inner">   <p class="dynamic-icon icon-34"></p></div>
                 </div>
                 насолоджуєтесь
             </div>
@@ -871,44 +988,44 @@
         
         <div class="grid-inside">
             <div class="grid-item-colored grid-bg-1">
-                <span class="grid-item-icon">✅</span>
+                <span class="grid-item-icon"><span class="dynamic-icon icon-5"></span></span>
                 30 сніданків
             </div>
             <div class="grid-item-colored grid-bg-2">
-                <span class="grid-item-icon">🥗</span>
+                <span class="grid-item-icon"><span class="dynamic-icon icon-26"></span></span>
                 30 обідів
             </div>
             <div class="grid-item-colored grid-bg-3">
-                <span class="grid-item-icon">🍲</span>
+                <span class="grid-item-icon"><span class="dynamic-icon icon-6"></span></span>
                 30 вечерь
             </div>
             <div class="grid-item-colored grid-bg-4">
-                <span class="grid-item-icon">🍎</span>
+                <span class="grid-item-icon"><span class="dynamic-icon icon-4"></span></span>
                 Перекуси
             </div>
             
             <div class="grid-item-full-wrapper">
                 <div class="grid-item-row">
                     <div class="grid-item-row-left">
-                        <span>📸</span> Фото кожної страви
+                        <span><span class="dynamic-icon icon-35"></span></span> Фото кожної страви
                     </div>
                   
                 </div>
                 <div class="grid-item-row">
                     <div class="grid-item-row-left">
-                        <span>⚖️</span> Калорії та БЖВ
+                        <span><span class="dynamic-icon icon-36"></span></span> Калорії та БЖВ
                     </div>
                   
                 </div>
                 <div class="grid-item-row">
                     <div class="grid-item-row-left">
-                        <span>🥦</span> Звичайні продукти з магазину
+                        <span><span class="dynamic-icon icon-18"></span></span> Звичайні продукти з магазину
                     </div>
                   
                 </div>
                 <div class="grid-item-row">
                     <div class="grid-item-row-left">
-                        <span>📝</span> Простий опис приготування
+                        <span><span class="dynamic-icon icon-24"></span></span> Простий опис приготування
                     </div>
                    
                 </div>
@@ -916,19 +1033,19 @@
         </div>
         
         <div class="simple-list" style="margin-top: 24px; text-align: center;">
-            <p class="fw-bold">✅ Без дієт.</p>
-            <p class="fw-bold">✅ Без заборон.</p>
-            <p class="fw-bold">✅ Без дорогих інгредієнтів.</p>
-            <p class="fw-bold">✅ Без щоденного стресу.</p>
+            <p class="fw-bold">     <span class="dynamic-icon icon-38"></span> Без дієт.</p>
+            <p class="fw-bold">     <span class="dynamic-icon icon-38"></span> Без заборон.</p>
+            <p class="fw-bold">     <span class="dynamic-icon icon-38"></span> Без дорогих інгредієнтів.</p>
+            <p class="fw-bold">     <span class="dynamic-icon icon-38"></span> Без щоденного стресу.</p>
         </div>
           <div class="bonus-pill">
-            <span class="text-accent-green">🎁 + 20 рецептів десертів</span> без цукру у подарунок
+            <span class="text-accent-green"><span class="dynamic-icon icon-37"></span> + 20 рецептів десертів</span> без цукру у подарунок
         </div>
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
 <!--ТУТ РЕКОМЕНДУЮ ТАКОЖ ПОСИЛАННЯ ДЛЯ КНОПКИ БАХНУТЬ.................................................................................-->
        <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
-         class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
+         class="btn"><span class="dynamic-icon icon-12"></span> ОТРИМАТИ МЕНЮ</a>
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
@@ -970,29 +1087,29 @@
     </section>
 
 <section>
-        <h2 class="h2-title text-center">Ми вже все <span class="text-accent-green">продумали за вас!</span> 🍃</h2>
+        <h2 class="h2-title text-center">Ми вже все <span class="text-accent-green">продумали за вас!</span></h2>
 
         <div class="grid-inside">
             <div class="grid-item">
-                <span style="font-size: 36px; margin-bottom: 4px;">🥬</span>
+                <span style="font-size: 36px; margin-bottom: 4px;" class="dynamic-icon icon-13"></span>
                 <div class="fw-bold">Збалансовано</div>
                 <div style="font-size: 13px; color: var(--text-gray); font-weight: 500; line-height: 1.3;">Оптимальне співвідношення БЖВ та калорій</div>
             </div>
             
             <div class="grid-item">
-                <span style="font-size: 36px; margin-bottom: 4px;">🍱</span>
+                <span style="font-size: 36px; margin-bottom: 4px;" class="dynamic-icon icon-39"></span>
                 <div class="fw-bold">Різноманітно</div>
                 <div style="font-size: 13px; color: var(--text-gray); font-weight: 500; line-height: 1.3;">Нові страви щодня, без повторів</div>
             </div>
             
             <div class="grid-item">
-                <span style="font-size: 36px; margin-bottom: 4px;">⏱️</span>
+                <span style="font-size: 36px; margin-bottom: 4px;" class="dynamic-icon icon-29"></span>
                 <div class="fw-bold">Економія часу</div>
                 <div style="font-size: 13px; color: var(--text-gray); font-weight: 500; line-height: 1.3;">Готовий план харчування на тиждень</div>
             </div>
             
             <div class="grid-item">
-                <span style="font-size: 36px; margin-bottom: 4px;">👩‍🍳</span>
+                <span style="font-size: 36px; margin-bottom: 4px;" class="dynamic-icon icon-40"> </span>
                 <div class="fw-bold">Зручно</div>
                 <div style="font-size: 13px; color: var(--text-gray); font-weight: 500; line-height: 1.3;">Списки покупок та прості рецепти</div>
             </div>
@@ -1000,7 +1117,7 @@
     </section>
 
     <section>
-        <h2 class="h2-title text-center">Відгуки покупців 💬</h2>
+        <h2 class="h2-title text-center">Відгуки покупців        <span class="dynamic-icon icon-7"></span></h2>
         
         <p class="text-center fw-bold" style="margin-bottom: 24px;">Понад сотня жінок уже користуються меню та щодня економлять час на пошук рецептів ❤️</p>
         
@@ -1008,16 +1125,29 @@
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
 <!--ТУТ в атрибуті SRC вкажи посилання на картинку відгуку............................................................................-->
-            <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Відгук+1" class="img-menu-screen" alt="Відгук 1" style="margin: 0;">
-            <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Відгук+2" class="img-menu-screen" alt="Відгук 2" style="margin: 0;">
-            <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Відгук+3" class="img-menu-screen" alt="Відгук 3" style="margin: 0;">
+                  <div class="reviews-slider">
+        <div class="review-slider-card">
+            <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Відгук+1" alt="Відгук 1">
+        </div>
+        <div class="review-slider-card">
+            <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Відгук+2" alt="Відгук 2">
+        </div>
+        <div class="review-slider-card">
+            <img src="https://placehold.co/800x400/E5E7EB/6B7280?text=Відгук+3" alt="Відгук 3">
+        </div>
+    </div>
+    
+    <div class="gallery-hint" style="margin-top: 4px; margin-bottom: 0;">
+        Гортай відгуки
+        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+    </div>
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
         </div>
         
        <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
-         class="btn" style="margin-top: 24px;">🟢 ХОЧУ МЕНЮ</a>
+         class="btn" style="margin-top: 24px;">       <span class="dynamic-icon icon-12"></span> ХОЧУ МЕНЮ</a>
     </section>
 
     <section>
@@ -1037,16 +1167,16 @@
     </section>
 
     <section id="offer">
-        <h2 class="h2-title text-center">PDF МЕНЮ НА 30 ДНІВ У ВАШ TELEGRAM ✈️</h2>
+        <h2 class="h2-title text-center"><span class="dynamic-icon icon-1"></span> PDF МЕНЮ НА 30 ДНІВ У ВАШ TELEGRAM <span class="dynamic-icon icon-41"></span></h2>
         
         <ul class="offer-list">
-            <li>✅ 30 сніданків</li>
-            <li>🥗 30 обідів</li>
-            <li>🍲 30 вечерь + перекуси</li>
-            <li>📸 Фото кожної страви</li>
-            <li>⚖️ Калорії та БЖВ</li>
-            <li>🥦 Звичайні продукти</li>
-            <li class="fw-bold">🎁 Бонус: 20 десертів без цукру</li>
+            <li>    <span class="dynamic-icon icon-5"></span> 30 сніданків</li>
+            <li>    <span class="dynamic-icon icon-26"></span> 30 обідів</li>
+            <li>    <span class="dynamic-icon icon-6"></span> 30 вечерь + <span class="dynamic-icon icon-4"></span> перекуси</li>
+            <li>    <span class="dynamic-icon icon-35"></span> Фото кожної страви</li>
+            <li>    <span class="dynamic-icon icon-36"></span> Калорії та БЖВ</li>
+            <li>    <span class="dynamic-icon icon-18"></span> Звичайні продукти</li>
+            <li class="fw-bold">    <span class="dynamic-icon icon-21"></span> Бонус: 20 десертів без цукру</li>
         </ul>
         
         <div class="price-wrap">
@@ -1057,7 +1187,7 @@
 <!--..................................................................................................................................-->
 <!--ТУТ РЕКОМЕНДУЮ ТАКОЖ ПОСИЛАННЯ ДЛЯ КНОПКИ БАХНУТЬ.................................................................................-->
         <a href="https://secure.wayforpay.com/page?vkh=6a10ca0e-dfdc-4c03-bbb6-118922d1dba8"
-         class="btn">🟢 ОТРИМАТИ МЕНЮ</a>
+         class="btn">    <span class="dynamic-icon icon-12"></span> ОТРИМАТИ МЕНЮ</a>
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
 <!--..................................................................................................................................-->
